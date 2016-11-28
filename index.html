@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Society Education Programs</title>
+    <meta charset="utf-8" name="description" content="Society Education Programs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Society Education Programs</h1>
+        <div class="forms">
+            <form class="grey-frame">
+                <div class="dropdown">
+                    <input type="text" value="" class="search-form1" placeholder="SCHOLARSHIP" onclick="showScholarships()">
+                    <div id="scholarships" class="dropdown-content">
+                        <p>SEARCH ALL</p>
+                        <p id='scholarship'>SCHOLARSHIP PROGRAM</p>
+                        <p id='loan'>LOAN PROGRAM</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" class="search-form2" placeholder="EDUCATION LEVEL" onclick="showLevels()">
+                    <div id="levels-of-education" class="dropdown-content">
+                        <p>SEARCH ALL</p>
+                        <p id="kindergarten">KINDERGARTEN</p>
+                        <p id="high-school">HIGH SCHOOL</p>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <button type="submit" class="search-button">SEARCH</button>
+            </form>
+        </div>
+        <div class="image-gallery">
+            <table class="logos-table">
+                <tr>
+                    <th><img class="scholarship" data-non-color="logos/acm.png" data-color="logos/acm-color.png" src="logos/acm.png" /></th>
+                    <th><img class="scholarship" data-non-color="logos/aci.png" data-color="logos/aci-color.png" src="logos/aci.png" /></th>
+                    <th><img class="loan" data-non-color="logos/acec.jpeg" data-color="logos/acec-color.jpeg" src="logos/acec.jpeg" height="100" width="120" /></th>
+                    <th><img class="loan" data-non-color="logos/AFE.png" data-color="logos/afe-color.png" src="logos/AFE.png" /></th>
+                </tr>
+                <tr>
+                    <th><img class="kindergarten" data-non-color="logos/acec.jpeg" data-color="logos/acec-color.jpeg" src="logos/acec.jpeg" height="100" width="120" /></th>
+                    <th><img class="high-school" data-non-color="logos/acm.png" data-color="logos/acm-color.png" src="logos/acm.png" /></th>
+                    <th><img class="kindergarten" data-non-color="logos/AFE.png" data-color="logos/afe-color.png" src="logos/AFE.png" /></th>
+                    <th><img class="high-school" data-non-color="logos/aci.png" data-color="logos/aci-color.png" src="logos/aci.png" /></th>
+                </tr>
+                <tr>
+                    <th><img class="scholarship" data-non-color="logos/aci.png" data-color="logos/aci-color.png" src="logos/aci.png" /></th>
+                    <th><img class="loan" data-non-color="logos/acec.jpeg" data-color="logos/acec-color.jpeg" src="logos/acec.jpeg" height="100" width="120" /></th>
+                    <th><img class="scholarship" data-non-color="logos/acm.png" data-color="logos/acm-color.png" src="logos/acm.png" /></th>
+                    <th><img class="loan" data-non-color="logos/AFE.png" data-color="logos/afe-color.png" src="logos/AFE.png" /></th>
+                </tr>
+                <tr>
+                    <th><img class="kindergarten" data-non-color="logos/aci.png" data-color="logos/aci-color.png" src="logos/aci.png" /></th>
+                    <th><img class="high-school" data-non-color="logos/AFE.png" data-color="logos/afe-color.png" src="logos/AFE.png" /></th>
+                    <th><img class="high-school" data-non-color="logos/acec.jpeg" data-color="logos/acec-color.jpeg" src="logos/acec.jpeg" height="100" width="120" /></th>
+                    <th><img class="kindergarten" data-non-color="logos/acm.png" data-color="logos/acm-color.png" src="logos/acm.png" /></th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
