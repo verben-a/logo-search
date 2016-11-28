@@ -1,10 +1,13 @@
+
 function showScholarships() {
     $("#scholarships").toggle("show");
 }
 
+
 function showLevels() {
     $("#levels-of-education").toggle("show");
 }
+
 
 $(document).ready(function() {
     $('#scholarships p').on('click', function(e) {
@@ -13,8 +16,10 @@ $(document).ready(function() {
         $('.search-form1').val($(this).text());
         $('#scholarships').hide();
 
+
         var scholarships = $('.scholarship');
         var loans = $('.loan');
+
 
         if (this.id == 'scholarship') {
 
@@ -30,11 +35,13 @@ $(document).ready(function() {
                 $(loans[i]).attr('src', $(loans[i]).data('color'));
             }
 
+
             for (var i = 0; i < scholarships.length; i++) {
                 $(scholarships[i]).attr('src', $(scholarships[i]).data('non-color'));
             }
         }
     });
+
 
     // education
     $('#levels-of-education p').on('click', function(e) {
@@ -43,10 +50,13 @@ $(document).ready(function() {
         $('.search-form2').val($(this).text());
         $('#levels-of-education').hide();
 
+
         var kidergartens = $('.kindergarten');
         var highschools = $('.high-school');
 
+
     if (this.id == 'kindergarten') {
+
 
             for (var i = 0; i < highschools.length; i++) {
                 $(highschools[i]).attr('src', $(highschools[i]).data('non-color'));
@@ -60,10 +70,12 @@ $(document).ready(function() {
                 $(highschools[i]).attr('src', $(highschools[i]).data('color'));
             }
 
+
             for (var i = 0; i < kidergartens.length; i++) {
                 $(kidergartens[i]).attr('src', $(kidergartens[i]).data('non-color'));
             }
         }
+
 
     });
 });
